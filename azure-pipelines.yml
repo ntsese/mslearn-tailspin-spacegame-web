@@ -7,7 +7,12 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+    name: 'Default'
+demands:
+  - msbuild
+  - visualstudio
+  - vstest
+  - Agent.Version -gtVersion 2.163.1t
 
 variables:
   solution: '**/*.sln'
