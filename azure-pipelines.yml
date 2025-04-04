@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'Azure pipelines'
+  vmImage: ubuntu-latest
 
 variables:
   solution: '**/*.sln'
